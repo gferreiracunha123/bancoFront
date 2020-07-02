@@ -1,0 +1,15 @@
+<ol style="margin-top: 4%;" class="list-unstyled">
+  <li *ngFor="let cols of rows" class="row no-gutters">
+    <div *ngFor="let extratoaux of cols" class="col-4 " apDarkenOnHover>
+      <ap-card>
+        <div class="text-center">
+          <app-extrato [extrato]="extratoaux"
+                     ></app-extrato>
+        </div>
+      </ap-card>
+    </div>
+  </li>
+</ol>
+<p class="text-center text-muted" *ngIf="!extratos.length">
+    Dado não encontrado
+</p>

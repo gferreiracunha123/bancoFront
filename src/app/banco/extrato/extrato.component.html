@@ -1,0 +1,13 @@
+<div style="margin: 20px">
+  <div><h6>Dados bancários:</h6> {{extrato.nomeBanco}}</div>
+  <hr>
+  <div style="display: flex"><h6>Data do lançamento:</h6> {{extrato.dataLancamentoContaCorrenteCliente}}</div>
+  <div style="display: flex"><h6>Descrição:</h6> {{extrato.nomeSituacaoRemessa}}</div>
+  <div style="display: flex"><h6>Número:</h6> {{extrato.numeroRemessaBanco}}</div>
+  <div style="display: flex"><h6>Situação:</h6> {{extrato.nomeTipoOperacao}}</div>
+  <div style="display: flex"><h6>Data de confirmação:</h6> {{extrato.dataEfetivaLancamento}}</div>
+  <div style="display: flex"><h6>Valor final:</h6> R${{extrato.valorLancamentoRemessa}}</div>
+</div>
+<img class="card-img-top" height="20" width="30"
+     src="https://www.cielo.com.br/_nuxt/img/6eaf9b6.svg"
+     alt="Card image cap">
